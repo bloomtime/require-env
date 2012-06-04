@@ -29,7 +29,7 @@ returns true if `process.env[name]` exists and is not `undefined`.
 
 ## env.inherit(filename)
 
-Synchronously loads environment variables from the given file and adds them to `process.env`. Useful for running tests with different environment variables. Understands comments (lines beginning with `#`). Does not crash if the file is missing (just prints a warning). Written with [Foreman's](https://github.com/ddollar/foreman) `.env` files in mind.
+Synchronously loads environment variables of the form `KEY=VALUE` from the given file and adds them to `process.env`. Useful for running tests with different environment variables. Understands comments (lines beginning with `#`). Does not crash if the file is missing (just prints a warning). Written with [Foreman's](https://github.com/ddollar/foreman) `.env` files in mind.
 
 ## env.require(name)
 
