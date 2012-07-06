@@ -2,7 +2,7 @@
   "author": "Tom Carden <tom@bloom.io> (http://bloom.io)",
   "name": "require-env",
   "description": "Crash first process.env utils.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/bloomtime/require-env",
   "repository": {
     "type": "git",
