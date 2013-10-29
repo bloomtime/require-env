@@ -1,8 +1,7 @@
 /*jshint node:true globalstrict:true*/
 "use strict";
 var fs = require('fs'),
-    url = require('url'),
-    _ = require('underscore');
+    url = require('url');
 
 module.exports = {
     contains: function(name) {
@@ -35,10 +34,15 @@ module.exports = {
     },
     requireUrl: function(name) {
         var option = url.parse(this.require(name));
-        return _.extend(option, {
-            port: parseInt(option.port,10),
-            user: option.auth && option.auth.split(":")[0],
-            pass: option.auth && option.auth.split(":")[1]
-        });
+
+        option.port = parseInt(option.port, 10);
+
+        if (option.auth) {
+            var auth = option.auth.split(":", 2);
+            option.user = auth[0];
+            option.pass = auth[1];
+        }
+
+        return option;
     }
 };
