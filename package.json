@@ -9,6 +9,7 @@
     "url": "https://github.com/bloomtime/require-env.git"
   },
   "main": "index.js",
+  "types": "index.d.ts",
   "engines": {
     "node": ">= 0.6.0"
   },
