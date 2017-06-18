@@ -1,4 +1,4 @@
-// Type definitions for require-env 0.1.0
+// Type definitions for require-env 0.2.0
 // Project: require-env
 // Definitions by: Jip Stavenuiter https://github.com/Jipperism
 
